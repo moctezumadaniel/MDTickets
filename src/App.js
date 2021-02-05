@@ -1,12 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import MainForm from "./MainForm"
+import MainTicket from "./MainTicket"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <MainTicket/>
+      <MainForm/>
+      
     </div>
   );
 }
