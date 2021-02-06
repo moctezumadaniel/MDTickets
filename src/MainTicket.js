@@ -1,10 +1,10 @@
-import { render } from "@testing-library/react"
 
+import "./MainTicket.css";
 function MainTicket (){
     return(
-        <div>
-            <div>Descripcion</div>
-            <div>Monto</div>
+        <div className="MainTicketContainer">
+            <div className="Description">Descripcion</div>
+            <div className="Amount">Monto</div>
         </div>
     );
 }
