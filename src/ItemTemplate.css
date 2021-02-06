@@ -1,0 +1,27 @@
+.ItemContainer{
+    background-color:cornsilk;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.ItemDescription{
+    background: #026ED2;
+    color: white;
+    width: 70%;
+    border-radius: 5px;
+    font-size: larger;
+    
+
+}
+
+.ItemAmount{
+    background: #026ED2;
+    color: white;
+    width: 25%;
+    border-radius: 5px;
+    font-size:larger;
+}

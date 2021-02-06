@@ -1,8 +1,9 @@
+import "./ItemTemplate.css"
 function ItemTemplate(){
     return(
-        <div>
-            <div>Descripcion escrita</div>
-            <div>Monto escrito</div>
+        <div className="ItemContainer">
+            <div className="ItemDescription">Descripcion escrita</div>
+            <div className="ItemAmount">Monto escrito</div>
         </div>
     );
 }
