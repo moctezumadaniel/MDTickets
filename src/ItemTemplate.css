@@ -9,19 +9,20 @@
 }
 
 .ItemDescription{
-    background: #026ED2;
-    color: white;
+    background: white;
+    color: black;
     width: 70%;
     border-radius: 5px;
     font-size: larger;
-    
+    text-align: justify;
 
 }
 
 .ItemAmount{
-    background: #026ED2;
-    color: white;
+    background: white;
+    color: black;
     width: 25%;
     border-radius: 5px;
-    font-size:larger;
+    font-size:x-large;
+    text-align: center;
 }

@@ -3,7 +3,7 @@ function ItemTemplate(){
     return(
         <div className="ItemContainer">
             <div className="ItemDescription">Descripcion escrita</div>
-            <div className="ItemAmount">Monto escrito</div>
+            <div className="ItemAmount">Monto escrito 20,500</div>
         </div>
     );
 }
