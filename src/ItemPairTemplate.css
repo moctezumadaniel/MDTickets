@@ -1,0 +1,29 @@
+.ItemPairContainer{
+    background-color:cornsilk;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.ItemPairDescription{
+    background: #F5F5F5;
+    color: black;
+    width: 70%;
+    border-radius: 5px;
+    font-size: larger;
+    text-align: justify;
+    align-items: center;
+
+}
+
+.ItemPairAmount{
+    background: #F5F5F5;
+    color: black;
+    width: 25%;
+    border-radius: 5px;
+    font-size:x-large;
+    text-align: center;
+}
