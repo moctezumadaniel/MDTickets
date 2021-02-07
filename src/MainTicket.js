@@ -3,8 +3,11 @@ import "./MainTicket.css";
 function MainTicket (){
     return(
         <div className="MainTicketContainer">
-            <div className="Description">Descripcion</div>
-            <div className="Amount">Monto</div>
+            <div className="TopMenuContainer">
+                <div className="TopMenuDescription">Descripcion</div>
+                <div className="TopMenuSplit"></div>
+                <div className="TopMenuAmount">Monto</div>
+            </div>
         </div>
     );
 }

@@ -1,26 +1,35 @@
 .MainTicketContainer{
-    background-color:cornsilk;
+    display: flex;
+    justify-content: center;
+}
+.TopMenuContainer{
+    background-color:#026ED2;
     display: flex;
     flex-direction: row;
     height: 40px;
     justify-content: space-around;
-    margin-top: 5px;
+    justify-self: center;
+    margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
+    width: 95%;
+    
 }
 
-.Description{
-    background: #026ED2;
+.TopMenuDescription{
     color: white;
-    width: 70%;
-    border-radius: 5px;
+    width: 75%;
     font-size: x-large;
 
 }
 
-.Amount{
-    background: #026ED2;
+.TopMenuSplit{
+    background-color: white;
+    width: 0.7%;
+}
+
+.TopMenuAmount{
     color: white;
     width: 25%;
-    border-radius: 5px;
     font-size: x-large;
 }
