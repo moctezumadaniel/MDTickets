@@ -1,0 +1,43 @@
+.ContainerTotalComponent{
+    display: flex;
+    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 2.5%;
+}
+.ContainerTotal{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 47.5%;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
+    padding: 0;
+
+}
+
+.TicketTotalDescription{
+    color: #026ED2;
+    min-width: 50%;
+    font-size: x-large;
+    align-self: center;
+    justify-content: center;
+    padding:4px;
+    padding-left: 10px;
+
+}
+.TicketTotalSplit{
+    background-color: #026ED2;
+    width: 1.4%;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+.TicketTotalAmount{
+    color: black;
+    font-size:x-large;
+    text-align: center;
+    align-self: center;
+    min-width: 50%;
+}
