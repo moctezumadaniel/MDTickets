@@ -10,6 +10,11 @@ function App() {
     <div className="App">
       <MainTicket/>
       <ItemTemplate/>
+      <ItemTemplate/>
+      <ItemTemplate/>
+      <ItemTemplate/>
+      <ItemTemplate/>
+      <ItemTemplate/>
       <Total/>
       <MainForm/>
       
