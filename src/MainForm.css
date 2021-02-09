@@ -1,9 +1,9 @@
-.MainItemTemplateContainer{
+.MainFormComponentContainer{
     display: flex;
     justify-content: center;
 }
 
-.ItemTemplateContainer{
+.MainFormContainer{
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -14,24 +14,9 @@
     border-radius: 10px;
     box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
     padding: 0;
-
 }
 
-.ItemTemplateContainer:hover{
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    width: 95%;
-    border-radius: 10px;
-    box-shadow: 0px 10px 7px rgba(0, 0, 0, 0.25);
-    padding: 0;
-
-}
-
-.ItemTemplateDescription{
+.MainFormDescriptionArea{
     color: black;
     width: 75%;
     font-size: x-large;
@@ -39,18 +24,25 @@
     align-self: center;
     padding:4px;
     padding-left: 10px;
+    border:none;
+    resize: none;
 
 }
-.ItemTemplateSplit{
+.MainFormSplit{
     background-color: #026ED2;
     width: 0.7%;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+
 }
 
-.ItemTemplateAmount{
+.MainFormAmounthArea{
     color: black;
     font-size:x-large;
     text-align: center;
     align-self: center;
+    padding:0px;
+    padding-left: 10px;
     min-width: 25%;
+    border:none;
+
 }
