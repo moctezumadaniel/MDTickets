@@ -26,6 +26,8 @@
     padding-left: 10px;
     border:none;
     resize: none;
+    outline-color:#026ED2;
+    
 
 }
 .MainFormSplit{
@@ -35,14 +37,18 @@
 
 }
 
+input[type="number"]{
+    height: 100%;
+}
 .MainFormAmounthArea{
     color: black;
     font-size:x-large;
     text-align: center;
     align-self: center;
     padding:0px;
-    padding-left: 10px;
     min-width: 25%;
     border:none;
+    outline-color: #026ED2;
+    
 
 }
