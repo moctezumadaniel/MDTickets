@@ -8,6 +8,7 @@ import Total from "./Total"
 function App() {
   return (
     <div className="App">
+      <MainButtons/>
       <MainTicket/>
       <ItemTemplate/>
       <ItemTemplate/>
@@ -17,7 +18,7 @@ function App() {
       <ItemTemplate/>
       <MainForm/>
       <Total/>
-      <MainButtons/>
+      
     </div>
   );
 }
