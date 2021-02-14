@@ -4,6 +4,7 @@ import MainTicket from "./MainTicket"
 import ItemTemplate from "./ItemTemplate"
 import MainButtons from "./MainButtons";
 import Total from "./Total"
+import AddButton from './AddButton'
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <ItemTemplate/>
       <MainForm/>
       <Total/>
-      
+      <AddButton/>
     </div>
   );
 }
