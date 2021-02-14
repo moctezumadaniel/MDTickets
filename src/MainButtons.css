@@ -15,7 +15,21 @@
     padding-top: 4px;
     padding-bottom: 4px;
     border: 2px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);  
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
+    outline: none;
+}
+.SaveTicketButton:active{
+    min-width: 30%;
+    font-size: larger;
+    border-radius:100px;
+    background-color: #53D769;
+    color: #FAFAFA;
+    border-color:#00BB1E ;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: 2px;
+    box-shadow: none;  
+    outline: none;
 }
 .ShareTicketButton{
     min-width: 30%;
@@ -27,7 +41,22 @@
     padding-top: 4px;
     padding-bottom: 4px;
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+.ShareTicketButton:active{
+    min-width: 30%;
+    font-size: larger;
+    border-radius:100px;
+    background-color: #5AC8FA;
+    color: #FAFAFA;
+    padding: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    box-shadow: none;
+    outline: none;
+
 }
 
 .ExitTicketButton{
@@ -40,5 +69,19 @@
     padding-top: 4px;
     padding-bottom: 4px;
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+}
+.ExitTicketButton:active{
+    min-width: 30%;
+    font-size: larger;
+    border-radius:100px;
+    background-color: #FC3D39;
+    color: #FAFAFA;
+    padding: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border: none;
+    box-shadow: none;
+    outline: none;
 }
