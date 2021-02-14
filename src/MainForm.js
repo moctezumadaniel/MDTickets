@@ -1,21 +1,32 @@
 import "./MainForm.css"
-import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { changeDescription, changeAmounth } from './actions'
 
 function MainForm (){
-    const [description,setDescription] = useState("")
-    const [amounth,setAmounth] = useState(0)
+    const description = useSelector(state => state.descriptionReducer)
+    const amounth = useSelector(state => state.amounthReducer)
+    const dispatch = useDispatch()
+
     const handleDescriptionChange = event=>{
-        setDescription(event.target.value);
+        dispatch(changeDescription(event.target.value));
     }
     const handleAmounthChange = event =>{
-        setAmounth(event.target.value);
+        dispatch(changeAmounth(event.target.value));
     }
     return(
         <div className="MainFormComponentContainer">
             <div className="MainFormContainer">
-                <textarea className="MainFormDescriptionArea" onChange={handleDescriptionChange} value={description}/>
+
+                <textarea className="MainFormDescriptionArea" 
+                onChange={handleDescriptionChange} 
+                value={description}/>
+
                 <div className="MainFormSplit"></div>
-                <input type="number" className="MainFormAmounthArea" onChange={handleAmounthChange} value={amounth}/>
+
+                <input type="number" className="MainFormAmounthArea"
+                onChange={handleAmounthChange} 
+                value={amounth}/>
+
             </div>
         </div>
 

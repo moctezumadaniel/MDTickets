@@ -8,14 +8,14 @@ export const newItem = (description, amounth)=>{
     }
 }
 
-export const ChangeDescription = (description)=>{
+export const changeDescription = (description)=>{
     return{
         type: "CHANGE_DESCRIPTION",
         payload:description
     }
 }
 
-export const ChangeAmounth = (amounth)=>{
+export const changeAmounth = (amounth)=>{
     return{
         type: "CHANGE_AMOUNTH",
         payload:amounth
