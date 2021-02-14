@@ -10,6 +10,7 @@ function MainForm (){
     const handleDescriptionChange = event=>{
         dispatch(changeDescription(event.target.value));
     }
+    
     const handleAmounthChange = event =>{
         dispatch(changeAmounth(event.target.value));
     }

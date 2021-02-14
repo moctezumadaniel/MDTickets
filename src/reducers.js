@@ -27,10 +27,22 @@ const amounthReducer = (state="", action)=>{
     }
 }
 
+const addButtonReducer = (state = false, action)=>{
+    switch(action.type){
+        case "ACTIVATE_BUTTON":
+            return true;
+        case "DEACTIVATE_BUTTON":
+            return false;
+        default:
+            return state;
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
-    amounthReducer
+    amounthReducer,
+    addButtonReducer
 
 })
 

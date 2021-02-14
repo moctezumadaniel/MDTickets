@@ -21,3 +21,15 @@ export const changeAmounth = (amounth)=>{
         payload:amounth
     }
 }
+
+export const activateAddButton = ()=>{
+    return{
+        type: "ACTIVATE_BUTTON"
+    }
+}
+
+export const deactivateAddButton = ()=>{
+    return{
+        type: "DEACTIVATE_BUTTON"
+    }
+}
