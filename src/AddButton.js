@@ -6,6 +6,7 @@ import { addConcept } from './actions'
 function AddButton (){
     const description = useSelector(state=>state.descriptionReducer);
     const amounth = useSelector(state=>state.amounthReducer)
+    const stateButton = useSelector(state=>state.addButtonReducer)
     const dispatch = useDispatch()
     const handleAddItem = (description, amounth)=>{
         dispatch(addConcept(description,amounth))
@@ -14,10 +15,10 @@ function AddButton (){
 
     return(
         <div className="AddButtonContainer">
-
-            <button className="AddButton"
-            onClick={()=>handleAddItem(description,amounth)}>ADD</button>
-
+            {stateButton ?
+                <button className="AddButton"
+                onClick={()=>handleAddItem(description,amounth)}>ADD</button>
+            :""}
         </div>
     )
     
