@@ -13,10 +13,22 @@ export const changeDescription = (description)=>{
     }
 }
 
+export const resetDescription = ()=>{
+    return{
+        type: "RESET_DESCRIPTION"
+    }
+}
+
 export const changeAmounth = (amounth)=>{
     return{
         type: "CHANGE_AMOUNTH",
         payload:amounth
+    }
+}
+
+export const resetAmounth = ()=>{
+    return{
+        type: "RESET_AMOUNTH"
     }
 }
 
