@@ -18,6 +18,8 @@ const descriptionReducer = (state = "", action) =>{
     switch(action.type){
         case "CHANGE_DESCRIPTION":
             return action.payload;
+        case "RESET_DESCRIPTION":
+            return "";
         default:
             return state
     }
@@ -27,6 +29,8 @@ const amounthReducer = (state="", action)=>{
     switch(action.type){
         case "CHANGE_AMOUNTH":
             return action.payload;
+        case "RESET_AMOUNTH":
+            return "";
         default:
             return state;
     }
