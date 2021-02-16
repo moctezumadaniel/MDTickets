@@ -1,10 +1,8 @@
-export const newItem = (description, amounth)=>{
+export const addConcept = (description,amounth)=>{
     return{
-        type: "NEW_ITEM",
-        payload:{
-            description,
-            amounth
-        }
+        type:"NEW_ITEM",
+        description,
+        amounth
     }
 }
 

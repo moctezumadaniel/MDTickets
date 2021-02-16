@@ -1,20 +1,22 @@
 import './AddButton.css'
-import { newItem } from './actions'
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux'
+import { addConcept } from './actions'
+
 
 function AddButton (){
-    const description = useSelector(state => state.descriptionReducer)
-    const amounth = useSelector(state => state.amounthReducer)
-    const dispatch = useDispatch();
-    const handleAddPress = (newDescription, newAmounth) =>{
-        dispatch(newItem(newDescription, newAmounth));
+    const description = useSelector(state=>state.descriptionReducer);
+    const amounth = useSelector(state=>state.amounthReducer)
+    const dispatch = useDispatch()
+    const handleAddItem = (description, amounth)=>{
+        dispatch(addConcept(description,amounth))
     }
+    
 
     return(
         <div className="AddButtonContainer">
 
-            <button className="AddButton" 
-            onClick={handleAddPress(description,amounth)}>ADD</button>
+            <button className="AddButton"
+            onClick={()=>handleAddItem(description,amounth)}>ADD</button>
 
         </div>
     )

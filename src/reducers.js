@@ -3,7 +3,12 @@ import { combineReducers } from "redux";
 const itemReducer = (state = [], action)=>{
     switch(action.type){
         case"NEW_ITEM":
-            return [...state,action.payload];
+            return [...state,
+                {
+                    description:action.description,
+                    amounth:action.amounth
+                }
+            ];
         default:
             return state;
     }

@@ -12,11 +12,6 @@ function App() {
       <MainButtons/>
       <MainTicket/>
       <ItemTemplate/>
-      <ItemTemplate/>
-      <ItemTemplate/>
-      <ItemTemplate/>
-      <ItemTemplate/>
-      <ItemTemplate/>
       <MainForm/>
       <Total/>
       <AddButton/>

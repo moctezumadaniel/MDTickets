@@ -1,12 +1,20 @@
 import "./ItemTemplate.css"
+import { useSelector } from 'react-redux'
 function ItemTemplate(){
-    return(
+    const items = useSelector(state=>state.itemReducer)
+
+    return(<div>
+
+        { items.map(i=>
+        (
         <div className="MainItemTemplateContainer">
             <div className="ItemTemplateContainer">
-            <div className="ItemTemplateDescription">Descripcion escrita</div>
-            <div className="ItemTemplateSplit"></div>
-            <div className="ItemTemplateAmount">1,000,000.00,000</div>
+                <div className="ItemTemplateDescription">{i.description}</div>
+                <div className="ItemTemplateSplit"></div>
+                <div className="ItemTemplateAmount">{i.amounth}</div>
             </div>
+        </div>
+        ))}
         </div>
     );
 }
