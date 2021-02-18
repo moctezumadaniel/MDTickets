@@ -9,8 +9,8 @@ function AddButton (){
     const conceptNumber = useSelector(state =>state.numberOfConceptsReducer)
     const dispatch = useDispatch()
     
-    function handleAddItem  (description, amounth){
-        dispatch(addConcept(description,amounth),
+    function handleAddItem  (conceptNumber,description, amounth){
+        dispatch(addConcept(conceptNumber,description,amounth),
         dispatch(addAmounthToGrandTotal(parseFloat(amounth),
         dispatch(resetAmounth()),
         dispatch(resetDescription())
@@ -23,7 +23,7 @@ function AddButton (){
         <div className="AddButtonContainer">
             {description.length > 0 || amounth > 0 ?
                 <button className="AddButton"
-                onClick={()=>handleAddItem(description,amounth)}>ADD</button>
+                onClick={()=>handleAddItem(conceptNumber,description,amounth)}>ADD</button>
             :""}
         </div>
     )
