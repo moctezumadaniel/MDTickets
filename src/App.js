@@ -5,6 +5,7 @@ import ItemTemplate from "./ItemTemplate"
 import MainButtons from "./MainButtons";
 import Total from "./Total"
 import AddButton from './AddButton'
+import DeleteButton from './DeleteButton'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <ItemTemplate/>
       <MainForm/>
       <Total/>
+      <DeleteButton/>
       <AddButton/>
     </div>
   );
