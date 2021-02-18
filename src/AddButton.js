@@ -10,9 +10,10 @@ function AddButton (){
     
     function handleAddItem  (description, amounth){
         dispatch(addConcept(description,amounth),
+        dispatch(addAmounthToGrandTotal(parseFloat(amounth),
         dispatch(resetAmounth()),
-        dispatch(resetDescription()),
-        dispatch(addAmounthToGrandTotal(parseFloat(amounth))));
+        dispatch(resetDescription())
+        )));
         
     }
     
