@@ -47,11 +47,22 @@ const addButtonReducer = (state = false, action)=>{
     }
 }
 
+const grandTotalReducer = (state = 0, action)=>{
+    switch(action.type){
+        case "ADD_AMOUNTH_TO_GT":
+            return state + action.newAmounth;
+        default:
+            return state
+        
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
     amounthReducer,
-    addButtonReducer
+    addButtonReducer,
+    grandTotalReducer
 
 })
 

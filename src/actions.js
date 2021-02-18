@@ -43,3 +43,11 @@ export const deactivateAddButton = ()=>{
         type: "DEACTIVATE_BUTTON"
     }
 }
+
+export const addAmounthToGrandTotal = (newAmounth)=>{
+    return{
+        type: "ADD_AMOUNTH_TO_GT",
+        newAmounth
+    }
+
+}
