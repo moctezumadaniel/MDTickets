@@ -1,6 +1,7 @@
-export const addConcept = (description,amounth)=>{
+export const addConcept = (conceptNumber,description,amounth)=>{
     return{
         type:"NEW_ITEM",
+        conceptNumber,
         description,
         amounth
     }

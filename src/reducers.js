@@ -5,6 +5,7 @@ const itemReducer = (state = [], action)=>{
         case"NEW_ITEM":
             return [...state,
                 {
+                    key:action.conceptNumber,
                     description:action.description,
                     amounth:action.amounth
                 }
