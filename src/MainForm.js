@@ -1,6 +1,6 @@
 import "./MainForm.css"
 import { useSelector, useDispatch } from 'react-redux';
-import { changeDescription, changeAmounth, activateAddButton, deactivateAddButton } from './actions'
+import { changeDescription, changeAmounth } from './actions'
 
 function MainForm (){
     const description = useSelector(state => state.descriptionReducer)
