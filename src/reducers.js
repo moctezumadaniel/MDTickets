@@ -57,12 +57,22 @@ const grandTotalReducer = (state = 0, action)=>{
     }
 }
 
+const numberOfConceptsReducer = (state = 1, action)=>{
+    switch(action.type){
+        case "INCREMENT_NUMBER_OF_CONCEPTS":
+            return state + 1;
+        default:
+            return state;
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
     amounthReducer,
     addButtonReducer,
-    grandTotalReducer
+    grandTotalReducer,
+    numberOfConceptsReducer
 
 })
 

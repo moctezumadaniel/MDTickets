@@ -6,6 +6,7 @@ import { addConcept, resetAmounth, resetDescription, addAmounthToGrandTotal } fr
 function AddButton (){
     const description = useSelector(state=>state.descriptionReducer);
     const amounth = useSelector(state=>state.amounthReducer)
+    const conceptNumber = useSelector(state =>state.numberOfConceptsReducer)
     const dispatch = useDispatch()
     
     function handleAddItem  (description, amounth){

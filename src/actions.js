@@ -51,3 +51,9 @@ export const addAmounthToGrandTotal = (newAmounth)=>{
     }
 
 }
+
+export const incrementNumberOfConcepts = ()=>{
+    return{
+        type: "INCREMENT_NUMBER_OF_CONCEPTS"
+    }
+}
