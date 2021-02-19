@@ -58,3 +58,15 @@ export const incrementNumberOfConcepts = ()=>{
         type: "INCREMENT_NUMBER_OF_CONCEPTS"
     }
 }
+
+export const activateDeButtons = ()=>{
+    return{
+        type: "ACTIVATE_DE_BUTTONS"
+    }
+}
+
+export const deactivateDeButtons = ()=>{
+    return{
+        type:"DEACTIVATE_DE_BUTTONS"
+    }
+}

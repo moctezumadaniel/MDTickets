@@ -63,13 +63,25 @@ const numberOfConceptsReducer = (state = 1, action)=>{
     }
 }
 
+const deleteEditButtonsReducer = (state = false, action)=>{
+    switch(action.type){
+        case "ACTIVATE_DE_BUTTONS":
+            return true;
+        case "DEACTIVATE_DE_BUTTONS":
+            return false;
+        default:
+            return state;
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
     amounthReducer,
     addButtonReducer,
     grandTotalReducer,
-    numberOfConceptsReducer
+    numberOfConceptsReducer,
+    deleteEditButtonsReducer,
 
 })
 
