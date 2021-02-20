@@ -1,6 +1,6 @@
 import './AddButton.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { addConcept, resetAmounth, resetDescription, addAmounthToGrandTotal } from './actions'
+import { addConcept, resetAmounth, resetDescription, addAmounthToGrandTotal, incrementNumberOfConcepts } from './actions'
 
 
 function AddButton (){
@@ -13,8 +13,9 @@ function AddButton (){
         dispatch(addConcept(conceptNumber,description,amounth),
         dispatch(addAmounthToGrandTotal(parseFloat(amounth),
         dispatch(resetAmounth()),
-        dispatch(resetDescription())
-        )));
+        dispatch(resetDescription(),
+        dispatch(incrementNumberOfConcepts())
+        ))));
         
     }
     
