@@ -11,11 +11,11 @@ function ItemTemplate(){
 
         { items.map(i=>
         (
-        <div className="MainItemTemplateContainer">
+        <div className="MainItemTemplateContainer" key ={i.key}>
             <div className="ItemTemplateContainer" onClick={handleItemClick}>
                 <div className="ItemTemplateDescription" >{i.description}</div>
                 <div className="ItemTemplateSplit" ></div>
-                <div className="ItemTemplateAmount" >{i.amounth}</div>
+                <div className="ItemTemplateAmount">{i.amounth}</div>
             </div>
         </div>
         ))}
