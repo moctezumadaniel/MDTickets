@@ -10,6 +10,8 @@ const itemReducer = (state = [], action)=>{
                     amounth:action.amounth
                 }
             ];
+        case "DELETE_ITEM":
+            return state.filter(i=>i.key !== action.key)
         default:
             return state;
     }

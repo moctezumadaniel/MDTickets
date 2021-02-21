@@ -77,3 +77,9 @@ export const selectItem = (key)=>{
         key
     }
 }
+
+export const deleteItem = (key)=>{
+    return{
+        type: "DELETE_ITEM"
+    }
+}
