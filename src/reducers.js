@@ -74,6 +74,15 @@ const deleteEditButtonsReducer = (state = false, action)=>{
     }
 }
 
+const itemSelectionReducer = (state = "", action)=>{
+    switch(action.type){
+        case "ITEM_SELECTED":
+            return action.key;
+        default:
+            return state;
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
@@ -82,6 +91,7 @@ const rootReducers = combineReducers({
     grandTotalReducer,
     numberOfConceptsReducer,
     deleteEditButtonsReducer,
+    itemSelectionReducer,
 
 })
 

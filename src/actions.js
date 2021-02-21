@@ -70,3 +70,10 @@ export const deactivateDeButtons = ()=>{
         type:"DEACTIVATE_DE_BUTTONS"
     }
 }
+
+export const selectItem = (key)=>{
+    return {
+        type:"ITEM_SELECTED",
+        key
+    }
+}
