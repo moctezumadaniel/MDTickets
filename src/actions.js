@@ -80,6 +80,7 @@ export const selectItem = (key)=>{
 
 export const deleteItem = (key)=>{
     return{
-        type: "DELETE_ITEM"
+        type: "DELETE_ITEM",
+        key
     }
 }
