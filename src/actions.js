@@ -77,3 +77,16 @@ export const deleteItem = (key)=>{
         key
     }
 }
+
+export const hideItem = (key)=>{
+    return{
+        type: "HIDE_ITEM",
+        key
+    }
+}
+
+export const disableHiding = ()=>{
+    return{
+        type: "DISABLE_HIDING"
+    }
+}

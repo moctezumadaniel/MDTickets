@@ -79,6 +79,18 @@ const itemSelectionReducer = (state = "", action)=>{
     }
 }
 
+const itemHided = (state = "", action)=>{
+    switch(action.type){
+        case "HIDE_ITEM":
+            return action.key;
+        case "DISABLE_HIDING":
+            return "";
+        default:
+            return state;
+
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
