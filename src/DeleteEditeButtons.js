@@ -12,9 +12,9 @@ function DeleteEditeButtons (){
     return(
     <div>
         {showButtons ?
-        <div className="DeleteButtonContainer">
-            <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>DELETE</button>
+        <div className="DeleteEditeButtonsContainer">
             <button className="EditeButton">EDIT</button>
+            <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>DELETE</button>
         </div>
         :""}
     </div>

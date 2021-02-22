@@ -1,66 +1,42 @@
-.DeleteButtonContainer{
+.DeleteEditeButtonsContainer{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin-right: 2.5%;
-    background-color: white;
+    background-color: #FAFAFA;
     margin-bottom: 10px;
 }
 
 .DeleteButton{
-    min-width: 47.5%;
+    min-width: 23.75%;
     font-size: x-large;
-    border-radius:100px;
-    background-color: white;
-    color: #026ED2;
-    border-color:#00BB1E ;
+    background-color: #FAFAFA;
+    color: #FC3D39;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #FC3D39;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 2px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
     outline: none;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
 
 }
 
-.DeleteButton:active{
-    min-width: 47.5%;
-    font-size: x-large;
-    border-radius:100px;
-    background-color: white;
-    color: #026ED2;
-    border-color:#00BB1E ;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow:none;
-    border: 2px;
-    outline: none;
-}
 
 .EditeButton{
-    min-width: 47.5%;
+    min-width: 23.75%;
     font-size: x-large;
-    border-radius:100px;
-    background-color: white;
-    color: #026ED2;
-    border-color:#00BB1E ;
+    background-color: #FAFAFA;
+    color: black;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: black;
     padding-top: 5px;
     padding-bottom: 5px;
-    border: 2px;
-    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.25);
     outline: none;
+    margin-right: 5px;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
 
-}
-
-.EditeButton:active{
-    min-width: 47.5%;
-    font-size: x-large;
-    border-radius:100px;
-    background-color: white;
-    color: #026ED2;
-    border-color:#00BB1E ;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow:none;
-    border: 2px;
-    outline: none;
 }
