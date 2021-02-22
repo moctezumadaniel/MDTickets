@@ -13,6 +13,7 @@ function DeleteEditeButtons (){
         {showButtons ?
         <div className="DeleteButtonContainer">
             <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>DELETE</button>
+            <button className="EditeButton">EDIT</button>
         </div>
         :""}
     </div>
