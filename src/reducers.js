@@ -50,12 +50,6 @@ const addButtonReducer = (state = false, action)=>{
     }
 }
 
-const grandTotalReducer = (state = 0, action)=>{
-    if( action.type === "ADD_AMOUNTH_TO_GT" && action.newAmounth){
-        return state + action.newAmounth
-    }else return state
-}
-
 const numberOfConceptsReducer = (state = 1, action)=>{
     switch(action.type){
         case "INCREMENT_NUMBER_OF_CONCEPTS":
@@ -90,7 +84,6 @@ const rootReducers = combineReducers({
     descriptionReducer,
     amounthReducer,
     addButtonReducer,
-    grandTotalReducer,
     numberOfConceptsReducer,
     deleteEditButtonsReducer,
     itemSelectionReducer,

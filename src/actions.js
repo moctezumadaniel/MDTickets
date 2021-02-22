@@ -45,13 +45,6 @@ export const deactivateAddButton = ()=>{
     }
 }
 
-export const addAmounthToGrandTotal = (newAmounth)=>{
-    return{
-        type: "ADD_AMOUNTH_TO_GT",
-        newAmounth
-    }
-
-}
 
 export const incrementNumberOfConcepts = ()=>{
     return{
