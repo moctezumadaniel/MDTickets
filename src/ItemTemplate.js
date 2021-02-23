@@ -1,6 +1,6 @@
 import "./ItemTemplate.css"
 import { useSelector, useDispatch } from 'react-redux'
-import { activateDeButtons, selectItem } from './actions'
+import { activateDeButtons, selectItem, disableHiding } from './actions'
 function ItemTemplate(){
     const allItems = useSelector(state=>state.itemReducer)
     const hideItem = useSelector(state=>state.itemHided)
@@ -8,7 +8,8 @@ function ItemTemplate(){
     const dispatch = useDispatch()
     function handleItemClick(key) {
         dispatch(activateDeButtons(),
-        dispatch(selectItem(key)))
+        dispatch(selectItem(key)),
+        dispatch(disableHiding()))
     }
     return(<div>
 
