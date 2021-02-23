@@ -1,6 +1,6 @@
 import "./DeleteEditeButtons.css"
 import { useSelector, useDispatch } from 'react-redux'
-import { deleteItem, deactivateDeButtons } from './actions'
+import { deleteItem, deactivateDeButtons, hideItem } from './actions'
 function DeleteEditeButtons (){
     const showButtons = useSelector(state=>state.deleteEditButtonsReducer)
     const currentKey = useSelector(state=>state.itemSelectionReducer)
@@ -9,11 +9,15 @@ function DeleteEditeButtons (){
         dispatch(deleteItem(key),
         dispatch(deactivateDeButtons()))
     }
+    const handleEdit = (key)=>{
+        dispatch(hideItem(key),
+        dispatch(deactivateDeButtons()))
+    }
     return(
     <div>
         {showButtons ?
         <div className="DeleteEditeButtonsContainer">
-            <button className="EditeButton">EDIT</button>
+            <button className="EditeButton" onClick={()=>{handleEdit(currentKey)}}>EDIT</button>
             <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>DELETE</button>
         </div>
         :""}
