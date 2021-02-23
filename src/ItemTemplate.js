@@ -24,6 +24,7 @@ function ItemTemplate(){
             </div>
         </div>
         ):
+
         (
             <div className="MainItemTemplateContainer" key ={i.key}>
             <div className="ItemTemplateContainer" onClick={()=>handleItemClick(i.key)}>
