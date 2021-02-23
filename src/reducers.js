@@ -99,6 +99,7 @@ const rootReducers = combineReducers({
     numberOfConceptsReducer,
     deleteEditButtonsReducer,
     itemSelectionReducer,
+    itemHided,
 
 })
 
