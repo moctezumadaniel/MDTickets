@@ -7,8 +7,8 @@ function ConfirmEditing (){
     return(
         <div>
             {editStatus ?
-            <div>
-            <button>CONFIRM</button>
+            <div className="ConfirmEditButtonContainer">
+            <button className="ConfirmEditButton">CONFIRM</button>
             </div>
             :""}
             

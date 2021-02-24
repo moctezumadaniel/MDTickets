@@ -1,0 +1,21 @@
+.ConfirmEditButtonContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.5%;
+}
+
+.ConfirmEditButton{
+    min-width: 47.5%;
+    font-size: x-large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: black;
+    outline: none;
+    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.25);
+
+}
