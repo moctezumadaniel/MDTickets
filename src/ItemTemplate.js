@@ -6,15 +6,18 @@ function ItemTemplate(){
     const hideItem = useSelector(state=>state.itemHided)
     const items = allItems.filter((i) => i.key !== hideItem)
     const itemSelected = useSelector(state => state.itemSelectionReducer)
+    const editStatus = useSelector(state=>state.editItemStatus)
     const dispatch = useDispatch()
     function handleItemClick(key) {
+        if(!editStatus){
         dispatch(activateDeButtons(),
         dispatch(selectItem(key)),
         dispatch(disableHiding()))
+        }
     }
     return(<div>
 
-        { items.map(i=>i.key === itemSelected ?
+        { items.map(i=>(i.key === itemSelected) && (!editStatus) ?
         (
         <div className="MainItemTemplateContainer" key ={i.key}>
             <div className="ItemTemplateContainerSelected" onClick={()=>handleItemClick(i.key)}>
