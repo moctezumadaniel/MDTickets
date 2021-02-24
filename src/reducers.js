@@ -91,6 +91,17 @@ const itemHided = (state = "", action)=>{
     }
 }
 
+const editItemStatus = (state = false, action)=>{
+    switch(action.type){
+        case "ACTIVATE_EDITING":
+            return true;
+        case "DEACTIVATE_EDITING":
+            return false;
+        default:
+            return state;
+    }
+}
+
 const rootReducers = combineReducers({
     itemReducer,
     descriptionReducer,
@@ -100,6 +111,7 @@ const rootReducers = combineReducers({
     deleteEditButtonsReducer,
     itemSelectionReducer,
     itemHided,
+    editItemStatus,
 
 })
 

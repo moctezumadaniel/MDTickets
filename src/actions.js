@@ -90,3 +90,15 @@ export const disableHiding = ()=>{
         type: "DISABLE_HIDING"
     }
 }
+
+export const activateEditing = ()=>{
+    return{
+        type: "ACTIVATE_EDITING",
+    }
+}
+
+export const deactivateEditing = ()=>{
+    return{
+        type:"DEACTIVATE_EDITING"
+    }
+}
