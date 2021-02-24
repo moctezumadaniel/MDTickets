@@ -13,7 +13,7 @@ const itemReducer = (state = [], action)=>{
         case "DELETE_ITEM":
             return state.filter(i=>i.key !== action.key);
         case "CONFIGURE_ITEM":
-            return [...state].forEach(
+            return [...state].map(
                 function(i) {
                     if(i.key === action.key){
                         return {key:i.key,
