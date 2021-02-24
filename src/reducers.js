@@ -84,6 +84,8 @@ const itemSelectionReducer = (state = "", action)=>{
     switch(action.type){
         case "ITEM_SELECTED":
             return action.key;
+        case "RESET_ITEM_SELECTION":
+            return ""
         default:
             return state;
     }

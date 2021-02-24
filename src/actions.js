@@ -71,6 +71,12 @@ export const selectItem = (key)=>{
     }
 }
 
+export const resetItemSelection = ()=>{
+    return{
+        type: "RESET_ITEM_SELECTION"
+    }
+}
+
 export const deleteItem = (key)=>{
     return{
         type: "DELETE_ITEM",
