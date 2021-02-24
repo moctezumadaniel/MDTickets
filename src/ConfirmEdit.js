@@ -1,6 +1,6 @@
 import './ConfirmEdit.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { configureItem, deactivateEditing } from './actions'
+import { configureItem, deactivateEditing, disableHiding, resetDescription, resetAmounth } from './actions'
 
 function ConfirmEditing (){
     const editStatus = useSelector(state=>state.editItemStatus)
@@ -11,7 +11,10 @@ function ConfirmEditing (){
 
     const handleConfirmEdition = ()=>{
         dispatch(configureItem(editingKey,editDescription,editAmounth),
-        dispatch(deactivateEditing()))
+        dispatch(deactivateEditing(),
+        dispatch(disableHiding(),
+        dispatch(resetDescription(),
+        dispatch(resetAmounth())))))
     }
 
     return(
