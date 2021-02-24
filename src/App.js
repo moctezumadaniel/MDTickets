@@ -6,6 +6,7 @@ import MainButtons from "./MainButtons";
 import Total from "./Total"
 import AddButton from './AddButton'
 import DeleteEditeButtons from './DeleteEditeButtons'
+import ConfirmEditing from './ConfirmEdit'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Total/>
       <DeleteEditeButtons/>
       <AddButton/>
+      <ConfirmEditing/>
     </div>
   );
 }
