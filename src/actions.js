@@ -102,3 +102,12 @@ export const deactivateEditing = ()=>{
         type:"DEACTIVATE_EDITING"
     }
 }
+
+export const configureItem = (description, amounth) =>{
+    return{
+        type:"CONFIGURE_ITEM",
+        description,
+        amounth,
+
+    }
+}
