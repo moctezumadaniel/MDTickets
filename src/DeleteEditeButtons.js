@@ -1,6 +1,6 @@
 import "./DeleteEditeButtons.css"
 import { useSelector, useDispatch } from 'react-redux'
-import { deleteItem, deactivateDeButtons, hideItem, changeDescription, changeAmounth } from './actions'
+import { deleteItem, deactivateDeButtons, hideItem, changeDescription, changeAmounth, activateEditing } from './actions'
 function DeleteEditeButtons (){
     const showButtons = useSelector(state=>state.deleteEditButtonsReducer)
     const currentKey = useSelector(state=>state.itemSelectionReducer)
@@ -18,8 +18,8 @@ function DeleteEditeButtons (){
         dispatch(hideItem(key),
         dispatch(deactivateDeButtons()),
         dispatch(changeDescription(description)),
-        dispatch(changeAmounth(amounth)))
-        console.log(allItems)
+        dispatch(changeAmounth(amounth)),
+        dispatch(activateEditing()))
     }
     return(
     <div>

@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 
 
 function ConfirmEditing (){
-    const editStatus = useSelector(state=>state.rootReducers)
+    const editStatus = useSelector(state=>state.editItemStatus)
     return(
         <div>
             {editStatus ?

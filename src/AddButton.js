@@ -7,6 +7,7 @@ function AddButton (){
     const description = useSelector(state=>state.descriptionReducer);
     const amounth = useSelector(state=>state.amounthReducer)
     const conceptNumber = useSelector(state =>state.numberOfConceptsReducer)
+    const editStatus = useSelector(state=>state.editItemStatus)
     const dispatch = useDispatch()
     
     function handleAddItem  (conceptNumber,description, amounth){
@@ -21,7 +22,7 @@ function AddButton (){
 
     return(
         <div className="AddButtonContainer">
-            {description.length > 0 || amounth > 0 ?
+            {(description.length > 0 || amounth > 0) && (editStatus===false)?
                 <button className="AddButton"
                 onClick={()=>handleAddItem(conceptNumber,description,amounth)}>ADD</button>
             :""}
