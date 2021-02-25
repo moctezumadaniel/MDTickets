@@ -1,6 +1,6 @@
 import "./MainForm.css"
 import { useSelector, useDispatch } from 'react-redux';
-import { changeDescription, changeAmounth } from './actions'
+import { changeDescription, changeAmounth, deactivateEditing, resetItemSelection, deactivateDeButtons } from './actions'
 
 function MainForm (){
     const description = useSelector(state => state.descriptionReducer)
@@ -14,12 +14,19 @@ function MainForm (){
     const handleAmounthChange = event =>{
         dispatch(changeAmounth(event.target.value));
     }
+
+    const handleMainFormClick = ()=>{
+        dispatch(deactivateEditing(),
+        dispatch(resetItemSelection(),
+        dispatch(deactivateDeButtons())))
+    }
     return(
         <div className="MainFormComponentContainer">
-            <div className="MainFormContainer">
+            <div className="MainFormContainer"
+            onClick={handleMainFormClick}>
 
                 <textarea className="MainFormDescriptionArea" 
-                onChange={handleDescriptionChange} 
+                onChange={handleDescriptionChange}
                 value={description}/>
 
                 <div className="MainFormSplit"></div>
