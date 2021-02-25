@@ -5,6 +5,7 @@ import { changeDescription, changeAmounth, deactivateEditing, resetItemSelection
 function MainForm (){
     const description = useSelector(state => state.descriptionReducer)
     const amounth = useSelector(state => state.amounthReducer)
+    const editStatus = useSelector(state=>state.editItemStatus)
     const dispatch = useDispatch()
 
     const handleDescriptionChange = event=>{
@@ -16,6 +17,7 @@ function MainForm (){
     }
 
     const handleMainFormClick = ()=>{
+        if(!editStatus)
         dispatch(deactivateEditing(),
         dispatch(resetItemSelection(),
         dispatch(deactivateDeButtons())))
