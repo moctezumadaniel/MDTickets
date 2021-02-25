@@ -17,6 +17,7 @@
     border: 2px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
     outline: none;
+    font-family: 'Roboto';
 }
 .SaveTicketButton:active{
     min-width: 30%;
@@ -30,6 +31,7 @@
     border: 2px;
     box-shadow: none;  
     outline: none;
+    font-family: 'Roboto';
 }
 .ShareTicketButton{
     min-width: 30%;
@@ -43,6 +45,7 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     outline: none;
+    font-family: 'Roboto';
 }
 .ShareTicketButton:active{
     min-width: 30%;
@@ -56,6 +59,7 @@
     border: none;
     box-shadow: none;
     outline: none;
+    font-family: 'Roboto';
 
 }
 
@@ -71,6 +75,7 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     outline: none;
+    font-family: 'Roboto';
 }
 .ExitTicketButton:active{
     min-width: 30%;
@@ -84,4 +89,5 @@
     border: none;
     box-shadow: none;
     outline: none;
+    font-family: 'Roboto';
 }

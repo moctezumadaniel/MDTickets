@@ -28,6 +28,7 @@
     resize: none;
     outline-color:#026ED2;
     border-radius: 10px;
+    font-family: 'Roboto';
 
 }
 .MainFormSplit{
@@ -50,5 +51,6 @@ input[type="number"]{
     border:none;
     outline-color: #026ED2;
     border-radius: 10px;
+    font-family: 'Roboto';
 
 }
