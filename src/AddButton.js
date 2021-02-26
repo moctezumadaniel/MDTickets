@@ -24,7 +24,7 @@ function AddButton (){
         <div className="AddButtonContainer">
             {(description.length > 0 || amounth > 0) && (editStatus===false)?
                 <button className="AddButton"
-                onClick={()=>handleAddItem(conceptNumber,description,amounth)}>ADD</button>
+                onClick={()=>handleAddItem(conceptNumber,description,amounth)}>AGREGAR</button>
             :""}
         </div>
     )

@@ -22,7 +22,7 @@ function ConfirmEditing (){
         <div>
             {editStatus ?
             <div className="ConfirmEditButtonContainer">
-            <button className="ConfirmEditButton" onClick={handleConfirmEdition}>CONFIRM</button>
+            <button className="ConfirmEditButton" onClick={handleConfirmEdition}>CONFIRMAR EDICIÓN</button>
             </div>
             :""}
             

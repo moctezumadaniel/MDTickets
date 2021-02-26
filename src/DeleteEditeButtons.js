@@ -26,8 +26,8 @@ function DeleteEditeButtons (){
     <div>
         {showButtons && !editStatus ?
         <div className="DeleteEditeButtonsContainer">
-            <button className="EditeButton" onClick={()=>{handleEdit(currentKey)}}>EDIT</button>
-            <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>DELETE</button>
+            <button className="EditeButton" onClick={()=>{handleEdit(currentKey)}}>EDITAR</button>
+            <button className="DeleteButton" onClick={()=>{handleDelete(currentKey)}}>BORRAR</button>
         </div>
         :""}
     </div>
